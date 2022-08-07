@@ -16,8 +16,8 @@ if (menuLinks.length > 0) { // если массив больше 0
 			const gotoBlock = document.querySelector(menuLink.dataset.goto);
 			const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - document.querySelector('header').offsetHeight;
 
-			if (iconMenu.classList.contains('_active')) {	// удаление активных классов при переходе 
-				document.body.classList.remove('_lock');		// к якорю из меню бургер
+			if (iconMenu.classList.contains('_active')) {	// удаление активных классов при переходе к якорю из меню бургер
+				document.body.classList.remove('_lock');		// запрет прокрутки во время активного меню бургер
 				iconMenu.classList.remove('_active');
 				menuBody.classList.remove('_active');
 			}
