@@ -68,6 +68,13 @@ body._lock {
 	min-height: 100%;
 	flex-direction: column;
 }
+.title {
+	font-weight: 500;
+	font-size: 64px;
+	line-height: 75px;
+	text-align: center;
+	color: #007765;
+}
 
 /* --------------------- header ---------------------- */
 
@@ -90,7 +97,7 @@ body._lock {
 		display: flex;
 		gap: 18px;
 	}
-	.menu__item {
+	.menu__link {
 		font-weight: 500;
 		font-size: 24px;
 		line-height: 28px;
@@ -168,7 +175,6 @@ body._lock {
 
 .jumbotron {
 	position: relative;
-	margin-top: 84px;
 }
 .jumbotron__background {
 	background: url(../img/jumbotron.jpg);
@@ -188,6 +194,22 @@ body._lock {
 	line-height: 84px;
 	text-align: center;
 	color: #FFFFFF;
+}
+
+/* --------------------- the problem ----------------- */
+
+.the-problem {
+	padding: 48px 0 92px 0;
+	background-color: #EEEEEE;
+}
+.the-problem__title {
+	margin-bottom: 16px;
+}
+.the-problem__text p {
+	margin-bottom: 45px;
+}
+.the-problem__text p:last-child {
+	margin-bottom: 0;
 }
 
 /* --------------------- footer ---------------------- */

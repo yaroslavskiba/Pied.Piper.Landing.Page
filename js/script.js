@@ -1,10 +1,5 @@
 // Скроллинг
-// Добавляем ко всем якорям атрибут data - goto = "Название якоря"
-// Якорь записывается в класс секции 
-// пример: class="page__section page__section_my-name"
-// Скрипт вычисляет высоту шапки и отнимает ее от начала координат секции
-
-const menuLinks = document.querySelectorAll('.menu__link[data-goto]'); 
+const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
 if (menuLinks.length > 0) {
 	menuLinks.forEach(menuLink => {
 		menuLink.addEventListener('click', onMenuLinkClick);
@@ -40,6 +35,5 @@ if (iconMenu) {
 		document.body.classList.toggle('_lock');
 		iconMenu.classList.toggle('_active');
 		menuBody.classList.toggle('_active');
-		myNameLang.classList.toggle('_active');
 	});
 }
