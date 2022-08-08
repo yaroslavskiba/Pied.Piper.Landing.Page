@@ -76,6 +76,12 @@ body._lock {
 	color: #007765;
 	margin-bottom: 16px;
 }
+@media (max-width: 480px) {
+	body {
+		font-size: 26px;
+		line-height: 32px;
+	}
+}
 
 /* --------------------- header ---------------------- */
 
@@ -227,6 +233,9 @@ body._lock {
 	.the-problem {
 		padding: 28px 0 52px 0;
 	}
+	.the-problem__text p {
+		margin-bottom: 25px;
+	}
 }
 
 /* --------------------- hero ------------------------ */
@@ -269,7 +278,7 @@ body._lock {
 	margin-right: 48px;
 }
 .ppc__text p {
-	margin-bottom: 40px;
+	margin-bottom: 45px;
 }
 .ppc__text p:last-child{
 	margin-bottom: 0;
@@ -283,6 +292,17 @@ body._lock {
 @media (max-width: 480px) {
 	.ppc {
 		padding: 28px 0 52px 0;
+	}
+	.ppc__text-image img {
+		width: 75px;
+		height: 75px;
+		margin-right: 15px;
+	}
+	.ppc__text p {
+		margin-bottom: 25px;
+	}
+	.ppc__text-image {
+		margin-bottom: 25px;
 	}
 }
 
