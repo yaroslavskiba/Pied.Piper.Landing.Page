@@ -4,8 +4,8 @@
 // пример: class="page__section page__section_my-name"
 // Скрипт вычисляет высоту шапки и отнимает ее от начала координат секции
 
-const menuLinks = document.querySelectorAll('.menu__link[data-goto]'); // собираем массив значений атрибута goto
-if (menuLinks.length > 0) { // если массив больше 0
+const menuLinks = document.querySelectorAll('.menu__link[data-goto]'); 
+if (menuLinks.length > 0) {
 	menuLinks.forEach(menuLink => {
 		menuLink.addEventListener('click', onMenuLinkClick);
 	});
@@ -16,8 +16,8 @@ if (menuLinks.length > 0) { // если массив больше 0
 			const gotoBlock = document.querySelector(menuLink.dataset.goto);
 			const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - document.querySelector('header').offsetHeight;
 
-			if (iconMenu.classList.contains('_active')) {	// удаление активных классов при переходе к якорю из меню бургер
-				document.body.classList.remove('_lock');		// запрет прокрутки во время активного меню бургер
+			if (iconMenu.classList.contains('_active')) {
+				document.body.classList.remove('_lock');
 				iconMenu.classList.remove('_active');
 				menuBody.classList.remove('_active');
 			}
@@ -26,18 +26,18 @@ if (menuLinks.length > 0) { // если массив больше 0
 				top: gotoBlockValue,
 				behavior: "smooth"
 			});
-			e.preventDefault(); // отмена выполнения href
+			e.preventDefault();
 		}
 	}
 }
 
 // Бургер
 
-const iconMenu = document.querySelector('.menu__icon'); // константа для иконки бургера
-const menuBody = document.querySelector('.menu__body'); // константа для появления меню
-if (iconMenu) { // если константа iconMenu существует 
-	iconMenu.addEventListener('click', function (e) {			// при нажатии на иконку происходит добавление классов 
-		document.body.classList.toggle('_lock'); 					//к другим классам
+const iconMenu = document.querySelector('.menu__icon');
+const menuBody = document.querySelector('.menu__body'); 
+if (iconMenu) { 
+	iconMenu.addEventListener('click', function (e) {
+		document.body.classList.toggle('_lock');
 		iconMenu.classList.toggle('_active');
 		menuBody.classList.toggle('_active');
 		myNameLang.classList.toggle('_active');

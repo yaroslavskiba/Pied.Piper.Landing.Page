@@ -3,9 +3,6 @@
 	margin: 0;
 	border: 0;
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	font-weight: 400;
-	font-size: 32px;
-	line-height: 38px;
 }
 *,*:before,*:after{
 	-moz-box-sizing: border-box;
@@ -21,8 +18,9 @@ html,body{
 	height: 100%;
 	width: 100%;
 	font-size: 100%;
-	line-height: 1;
-	font-size: 14px;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 38px;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -70,7 +68,6 @@ body._lock {
 	min-height: 100%;
 	flex-direction: column;
 }
-
 
 /* --------------------- header ---------------------- */
 
@@ -169,7 +166,29 @@ body._lock {
 
 /* --------------------- jumbotron ------------------- */
 
-
+.jumbotron {
+	position: relative;
+	margin-top: 84px;
+}
+.jumbotron__background {
+	background: url(../img/jumbotron.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 403px;
+	width: 100%;
+}
+.jumbotron__text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-weight: 500;
+	font-size: 72px;
+	line-height: 84px;
+	text-align: center;
+	color: #FFFFFF;
+}
 
 /* --------------------- footer ---------------------- */
 
