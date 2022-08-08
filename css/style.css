@@ -74,6 +74,7 @@ body._lock {
 	line-height: 75px;
 	text-align: center;
 	color: #007765;
+	margin-bottom: 16px;
 }
 
 /* --------------------- header ---------------------- */
@@ -175,13 +176,14 @@ body._lock {
 
 .jumbotron {
 	position: relative;
+	margin-top: 84px;
 }
 .jumbotron__background {
 	background: url(../img/jumbotron.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 403px;
+	min-height: 403px;
 	width: 100%;
 }
 .jumbotron__text {
@@ -203,7 +205,6 @@ body._lock {
 	background-color: #EEEEEE;
 }
 .the-problem__title {
-	margin-bottom: 16px;
 }
 .the-problem__text p {
 	margin-bottom: 45px;
@@ -211,6 +212,56 @@ body._lock {
 .the-problem__text p:last-child {
 	margin-bottom: 0;
 }
+
+/* --------------------- hero ------------------------ */
+
+.hero {
+	position: relative;
+}
+.hero__background {
+	background: url(../img/hero.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 483px;
+	width: 100%;
+}
+.hero__text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 56px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+/* --------------------- ppc ------------------------- */
+
+.ppc {
+	padding: 48px 0 92px 0;
+}
+.ppc__text-image {
+	margin-bottom: 40px;
+}
+.ppc__text-image img {
+	width: 115px;
+	height: 115px;
+	float: left;
+	margin-right: 48px;
+}
+.ppc__text p {
+	margin-bottom: 40px;
+}
+.ppc__text p:last-child{
+	margin-bottom: 0;
+}
+
+/* --------------------- the team -------------------- */
+
+
 
 /* --------------------- footer ---------------------- */
 
