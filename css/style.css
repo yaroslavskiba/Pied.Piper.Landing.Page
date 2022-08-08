@@ -261,9 +261,50 @@ body._lock {
 
 /* --------------------- the team -------------------- */
 
-
+.the-team {
+	padding: 48px 0 34px 0;
+	background-color: #EEEEEE;
+}
+.the-team__row {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+}
+.the-team__title {
+	margin-bottom: 32px;
+}
+.the-team__item {
+	flex: 0 1 33.333%;
+	margin-bottom: 58px;
+}
+.item__img {
+	border-radius: 50%;
+}
+.item__name {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	color: #007765;
+}
+.item__job {
+	font-style: italic;
+	font-size: 18px;
+	line-height: 21px;
+	color: #000000;
+}
 
 /* --------------------- footer ---------------------- */
 
 .footer {
+	background-color: #333333;
+}
+.footer__container {
+	max-width: 540px;
+}
+.footer__text {
+	margin: 48px 0 64px 0;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	color: #FFFFFF;
 }
