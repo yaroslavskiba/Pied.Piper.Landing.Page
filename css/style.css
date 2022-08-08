@@ -70,8 +70,8 @@ body._lock {
 }
 .title {
 	font-weight: 500;
-	font-size: 64px;
-	line-height: 75px;
+	font-size: calc(26px + 38 * (100vw / 1150));
+	line-height: calc(36px + 40 * (100vw / 1150));
 	text-align: center;
 	color: #007765;
 	margin-bottom: 16px;
@@ -189,16 +189,18 @@ body._lock {
 	width: 100%;
 }
 .jumbotron__text {
+	width: 100%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-weight: 500;
-	font-size: 72px;
+	font-size: calc(28px + 44 * (100vw / 1150));
 	line-height: 84px;
 	text-align: center;
 	color: #FFFFFF;
 }
+
 
 /* --------------------- the problem ----------------- */
 
@@ -207,12 +209,24 @@ body._lock {
 	background-color: #EEEEEE;
 }
 .the-problem__title {
+	margin-bottom: 16px;
 }
 .the-problem__text p {
 	margin-bottom: 45px;
 }
 .the-problem__text p:last-child {
 	margin-bottom: 0;
+}
+@media (max-width: 768px) {
+	.the-problem {
+		padding: 38px 0 72px 0;
+	}
+}
+
+@media (max-width: 480px) {
+	.the-problem {
+		padding: 28px 0 52px 0;
+	}
 }
 
 /* --------------------- hero ------------------------ */
@@ -234,8 +248,8 @@ body._lock {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-weight: 500;
-	font-size: 48px;
-	line-height: 56px;
+	font-size: calc(26px + 22 * (100vw / 1150));
+	line-height: calc(34px + 22 * (100vw / 1150));
 	text-align: center;
 	color: #FFFFFF;
 }
@@ -260,6 +274,17 @@ body._lock {
 .ppc__text p:last-child{
 	margin-bottom: 0;
 }
+@media (max-width: 768px) {
+	.ppc {
+		padding: 38px 0 72px 0;
+	}
+}
+
+@media (max-width: 480px) {
+	.ppc {
+		padding: 28px 0 52px 0;
+	}
+}
 
 /* --------------------- the team -------------------- */
 
@@ -270,6 +295,7 @@ body._lock {
 .the-team__row {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	text-align: center;
 }
 .the-team__title {
@@ -294,6 +320,25 @@ body._lock {
 	font-size: 18px;
 	line-height: 21px;
 	color: #000000;
+}
+@media (max-width: 768px) {
+	.the-team {
+		padding: 38px 0 24px 0;
+	}
+	.the-team__item {
+		flex: 0 1 50%;
+		margin-bottom: 48px;
+	}
+}
+
+@media (max-width: 480px) {
+	.the-team {
+		padding: 28px 0 14px 0;
+	}
+	.the-team__item {
+		flex: 0 1 100%;
+		margin-bottom: 38px;
+	}
 }
 
 /* --------------------- footer ---------------------- */
